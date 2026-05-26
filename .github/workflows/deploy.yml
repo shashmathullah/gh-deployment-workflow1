@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy Github Pages
 on: workflow_dispatch
 
 jobs:
@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout repository 1
+      - name: checkout repository
         uses: actions/checkout@v6
 
-      - name: install dotnet
-        uses: actions/setup-dotnet@v4
-        
-    
+      - name: install dotnet v6
+        uses: actions/set-dotnet@v4
+        with:
+          dotnet-version: '4'
