@@ -14,4 +14,4 @@ jobs:
       - name: install dotnet
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 4.x.x
+          dotnet-version: '4.x.x'
